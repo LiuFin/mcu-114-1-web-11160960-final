@@ -1,0 +1,15 @@
+@use "../common";
+
+footer {
+  border-top: 1px solid var(--border-color);
+
+  div {
+    display: var(--nav-display);
+    gap: 1.5rem;
+  }
+
+  p {
+    color: var(--text-color);
+    @include common.fontStyle(0.875rem, 400, 1.25rem);
+  }
+}
