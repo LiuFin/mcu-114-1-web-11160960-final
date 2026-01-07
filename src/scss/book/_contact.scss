@@ -41,4 +41,34 @@ div {
       margin-left: 10px;
     }
   }
+
+  &.skills {
+    margin-right: var(--skills-margin-right);
+    width: var(--skills-width);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    .item {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+
+      .skill {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .progress {
+        height: 10px;
+        border: solid 1px #ccc;
+
+        .progress-bar {
+          height: 10px;
+          background-color: var(--primary-color);
+        }
+      }
+    }
+  }
 }

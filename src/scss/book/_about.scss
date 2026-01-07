@@ -26,7 +26,7 @@ div {
       h3 {
         margin-bottom: 1.5rem;
         @include common.fontStyle(1.5rem, 600, 1.25rem);
-        color: var(--primary-color);
+        color: var(--header-color);
       }
 
       > div {
@@ -37,32 +37,28 @@ div {
     }
   }
 
-  &.skills {
+  &.edu {
     margin-right: var(--skills-margin-right);
     width: var(--skills-width);
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    align-items: center;
+
+    h3 {
+      margin-bottom: 1.5rem;
+      @include common.fontStyle(1.5rem, 600, 1.25rem);
+      color: var(--header-color);
+    }
 
     .item {
       display: flex;
       flex-direction: column;
       gap: 5px;
 
-      .skill {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
-
-      .progress {
-        height: 10px;
-        border: solid 1px #ccc;
-
-        .progress-bar {
-          height: 10px;
-          background-color: var(--primary-color);
-        }
+      h4 {
+        margin-bottom: 1.5rem;
+        color: var(--text-color);
       }
     }
   }
