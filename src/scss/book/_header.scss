@@ -11,6 +11,12 @@ header {
     gap: 2rem;
   }
 
+  h1 {
+    margin: 0px;
+    @include common.fontStyle(2.5rem, 900, 2.5rem);
+    color: #009393;
+  }
+
   h3 {
     margin: 0px;
     @include common.fontStyle(1.25rem, 700, 1.75rem);
