@@ -1,0 +1,64 @@
+@use "./common";
+
+header {
+  border-bottom: solid 1px var(--border-color);
+  background-color: var(--background-color);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+
+  h3 {
+    margin: 0px;
+    @include common.fontStyle(1.25rem, 700, 1.75rem);
+    color: var(--primary-color);
+  }
+
+  nav {
+    display: var(--nav-display);
+    gap: 1.5rem;
+  }
+  div {
+    display: flex;
+    align-items: center;
+
+    &.left {
+      gap: 2rem;
+    }
+
+    &.right {
+      gap: 0.5rem;
+    }
+
+    &.search {
+      display: var(--search-bar-display);
+      align-items: stretch;
+      gap: 0;
+
+      input {
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+        width: 200px;
+        padding: 1rem 0.5rem 1rem 1rem;
+        border: none;
+        background-color: var(--gray-color-100);
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      button {
+        @include common.buttonStyle;
+        border-top-right-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        padding: 0.5rem;
+      }
+    }
+  }
+
+  button {
+    @include common.buttonStyle;
+    background: transparent;
+    color: var(--text-color);
+  }
+}

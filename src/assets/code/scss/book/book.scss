@@ -1,20 +1,12 @@
 @use "../color";
-@use "./variable";
+@use "../variable";
 @use "./header";
 @use "./main";
-@use "./footer";
-@use "./home";
-@use "./about";
-@use "./contact";
 
 html,
 body {
   margin: 0;
   padding: 0;
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 body {
